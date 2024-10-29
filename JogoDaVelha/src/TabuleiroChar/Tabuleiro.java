@@ -2,7 +2,6 @@ package TabuleiroChar;
 
 public class Tabuleiro {
 
-    //Imprimir o tabuleiro
     public static void imprimirTabuleiro(char[][] tabuleiro) {
         System.out.println("-------------");
         for (char i = 0; i < 3; i++) {
@@ -14,7 +13,6 @@ public class Tabuleiro {
             System.out.println("-------------");
         }
     }
-    //Inicializador do tabuleiro
     public static void iniciarTabuleiro(char[][] tabuleiro){
         for(char i = 0; i < 3; i++) {
             for (char y = 0; y < 3; y++){
@@ -22,7 +20,6 @@ public class Tabuleiro {
             }
         }
     }
-    // Função que verifica se o tabuleiro ainda tem posições vazias
     public static boolean tabuleiroPreenchido(char[][] tabuleiro) {
         for(char i = 0; i < 3; i++) {
             for (char y = 0; y < 3; y++) {
@@ -33,7 +30,6 @@ public class Tabuleiro {
         }   return false; // Não há mais espaços vazios
     }
 
-    // Função para verificar vitória
     public static boolean verificarVitoria(char[][] tabuleiro, char jogador) {
         // Verifica linhas
         for (int i = 0; i < 3; i++) {
@@ -45,6 +41,7 @@ public class Tabuleiro {
                 }
             }
         }
+
         // Verifica colunas
         for (int i = 0; i < 3; i++) {
             if (tabuleiro[0][i] == jogador){
@@ -55,6 +52,7 @@ public class Tabuleiro {
                 }
             }
         }
+
         // Verifica diagonais
         if (tabuleiro[0][0] == jogador){
             if(tabuleiro[1][1] == jogador){

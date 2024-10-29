@@ -6,10 +6,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        char [][] tabuleiro= new char[3][3];
-        Tabuleiro.iniciarTabuleiro(tabuleiro);
-
         char jogador;
+
+        char [][] tabuleiro = new char[3][3];
+        Tabuleiro.iniciarTabuleiro(tabuleiro);
 
         while(Tabuleiro.tabuleiroPreenchido(tabuleiro)) {
             Tabuleiro.imprimirTabuleiro(tabuleiro);
