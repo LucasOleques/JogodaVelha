@@ -1,3 +1,5 @@
+package TabuleiroChar;
+
 import java.util.Scanner;
 
 public class Main {

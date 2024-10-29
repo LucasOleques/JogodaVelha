@@ -1,3 +1,5 @@
+package TabuleiroChar;
+
 public class Tabuleiro {
 
     //Imprimir o tabuleiro
